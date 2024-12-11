@@ -1,0 +1,156 @@
+/* Animations */
+.fade-in-top {
+  animation: fadeInTop 1s ease-in-out;
+}
+
+.fade-in-bottom {
+  animation: fadeInBottom 1s ease-in-out;
+}
+
+.fade-in-right {
+  animation: fadeInRight 1s ease-in-out;
+}
+
+@keyframes fadeInTop {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.swiper-wrapper {
+  transition-timing-function: ease-in-out; /* Smooth transition for slides */
+}
+
+/* Video Section */
+.video-section {
+  background: #333; /* Fallback for transparency */
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.play-button {
+  width: 80px;
+  height: 80px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.play-button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.play-button svg {
+  fill: white;
+  transition: transform 0.3s ease-in-out;
+}
+
+.play-button:hover svg {
+  transform: scale(1.1);
+}
+
+video {
+  cursor: pointer;
+}
+
+/* Client Section Styling */
+.client-section {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos-wrapper {
+  display: inline-flex;
+  animation: scrollLeft 15s linear infinite;
+}
+
+.logo {
+  flex-shrink: 0;
+  display: inline-block;
+  margin: 0;
+}
+
+.logo img {
+  max-height: 100px;
+  object-fit: contain;
+  margin: 0 15px;
+}
+
+/* Keyframes for Scrolling Effect */
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Background colors for contact info */
+.bg-dark {
+  background-color: #0b2345 !important;
+}
+
+.bg-light {
+  background-color: #f9f9f9 !important;
+}
+
+/* Styling for inline labels and form */
+.form-floating .form-control {
+  border-radius: 0;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.form-floating .form-control:focus {
+  border-bottom-color: #007bff;
+  box-shadow: none;
+}
+
+label {
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+textarea.form-control {
+  resize: none;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
