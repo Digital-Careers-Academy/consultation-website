@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Worldview Consultancy</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <!-- Add Bootstrap & Swiper -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
@@ -17,11 +23,9 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav
-      class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top"
-    >
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
       <div class="container">
-        <a class="navbar-brand text-primary fw-bold" href="#">Worldview</a>
+        <img src="images/logo.svg" alt="Logo" />
         <button
           class="navbar-toggler"
           type="button"
@@ -45,45 +49,43 @@
               <a class="nav-link" href="#testimonial">Testimonial</a>
             </li>
           </ul>
-          <a href="#contact" class="btn btn-primary ms-3"
-            >Book a Consultation</a
-          >
+          <a href="contact.html" class="btn">Book a Consultation</a>
         </div>
       </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="container mt-5 pt-5">
+    <section class="container" id="hero">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <!-- Slide 1 -->
           <div class="swiper-slide d-flex align-items-center">
-            <div class="row w-100">
-              <div class="col-lg-6 d-flex flex-column justify-content-center">
-                <h1 class="display-5 fw-bold fade-in-top">
+            <div class="row">
+              <div class="col-lg-7 d-flex flex-column justify-content-center">
+                <h1 class="fade-in-top">
                   Building websites that power your digital success
                 </h1>
                 <p class="lead fade-in-bottom">
                   Create seamless, user-friendly websites that elevate your
                   brand and drive business growth in the digital world.
                 </p>
-                <button class="btn btn-primary fade-in-bottom">
+                <button class="btn btn-lg fade-in-bottom">
                   Book a Consultation
                 </button>
               </div>
-              <div class="col-lg-6">
+              <div class="col-lg-3">
                 <img
-                  src="images/slide1.png"
+                  src="images/slides/slide1.png"
                   alt="Hero Image 1"
-                  class="img-fluid fade-in-right"
+                  class="fade-in-right"
                 />
               </div>
             </div>
           </div>
           <!-- Slide 2 -->
           <div class="swiper-slide d-flex align-items-center">
-            <div class="row w-100">
-              <div class="col-lg-6 d-flex flex-column justify-content-center">
+            <div class="row">
+              <div class="col-lg-7 d-flex flex-column justify-content-center">
                 <h1 class="display-5 fw-bold fade-in-top">
                   Transform the future, one product at a time
                 </h1>
@@ -91,15 +93,15 @@
                   Delivering personalized tech solutions that elevate
                   experiences and empower your business to thrive digitally.
                 </p>
-                <button class="btn btn-primary fade-in-bottom">
+                <button class="btn btn-lg fade-in-bottom">
                   Book a Consultation
                 </button>
               </div>
-              <div class="col-lg-6">
+              <div class="col-lg-3">
                 <img
-                  src="images/slide1.png"
+                  src="images/slides/slide2.png"
                   alt="Hero Image 2"
-                  class="img-fluid fade-in-right"
+                  class="fade-in-right"
                 />
               </div>
             </div>
@@ -107,7 +109,7 @@
           <!-- Slide 3 -->
           <div class="swiper-slide d-flex align-items-center">
             <div class="row w-100">
-              <div class="col-lg-6 d-flex flex-column justify-content-center">
+              <div class="col-lg-7 d-flex flex-column justify-content-center">
                 <h1 class="display-5 fw-bold fade-in-top">
                   Unlock a strategic edge with your data
                 </h1>
@@ -115,27 +117,31 @@
                   Transform raw data into actionable insights with cutting-edge
                   analytics that drive smarter decisions and business growth.
                 </p>
-                <button class="btn btn-primary fade-in-bottom">
+                <button class="btn btn-lg fade-in-bottom">
                   Book a Consultation
                 </button>
               </div>
-              <div class="col-lg-6">
+              <div class="col-lg-3">
                 <img
-                  src="images/slide1.png"
+                  src="images/slides/slide3.png"
                   alt="Hero Image 3"
-                  class="img-fluid fade-in-right"
+                  class="fade-in-right"
                 />
               </div>
             </div>
           </div>
         </div>
-        <!-- Swiper Pagination and Navigation -->
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+      </div>
+      <!-- Swiper Pagination and Navigation -->
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next">
+        <img src="images/icons/right-arr.svg" alt="Right Icon" />
+      </div>
+      <div class="swiper-button-prev">
+        <img src="images/icons/left-icon.svg" alt=" Left Icon" />
       </div>
     </section>
-    <section class="container mt-5">
+    <section id="video" class="container mt-5">
       <div class="video-section position-relative">
         <video
           id="promoVideo"
@@ -155,8 +161,8 @@
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="64"
-            height="64"
+            width="32"
+            height="32"
             fill="white"
             viewBox="0 0 16 16"
           >
@@ -180,7 +186,7 @@
             strategic partner for our clients, driving business success through
             the power of evolving technology.
           </p>
-          <a href="#" class="btn btn-primary rounded-pill px-4">Learn More</a>
+          <a href="#" class="btn rounded-pill px-4">Learn More</a>
         </div>
 
         <!-- Image -->
