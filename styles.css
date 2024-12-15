@@ -706,3 +706,65 @@ button:disabled {
 .social:hover img {
   transform: scale(1.2);
 }
+
+#contact h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+  color: #2762bf;
+}
+#contact p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  color: #717171;
+}
+
+#contact .box {
+  padding: 32px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 60px 30px #00000008;
+  position: relative;
+}
+.contact-arr {
+  position: absolute;
+  right: -80px;
+  bottom: -40px;
+}
+
+#contact .box .details {
+  border-radius: 10px;
+  background: #011c2b;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #fff;
+}
+#contact .box .details h6 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 42px;
+}
+
+#contact .box .details a {
+  color: #fff;
+  text-decoration: none;
+}
+#contact .box .details .content {
+  padding: 100px 0;
+}
+#contact .box label {
+  color: #05274c;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+#contact .border-bottom {
+  border-bottom: 1px solid #8d8d8d !important;
+}
+
+#contact .btn-con {
+  text-align: right;
+  margin-top: 25px;
+}
