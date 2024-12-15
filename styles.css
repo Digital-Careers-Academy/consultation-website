@@ -41,6 +41,7 @@ nav {
   border-radius: 50px !important;
   background: linear-gradient(166.45deg, #0053d0 0.91%, #001c44 142.33%);
   font-weight: 600;
+  border: 0 !important;
   line-height: 24px;
   color: #fff !important;
 }
@@ -54,6 +55,22 @@ nav {
 
 .btn:hover {
   background: #0053d0 !important;
+}
+
+.btn-light {
+  background: #deecfb;
+  color: #05274c !important;
+}
+
+.btn-trans {
+  background: transparent;
+  border: 1px solid #05274c !important;
+  color: #05274c !important;
+}
+
+.btn-trans:hover,
+.btn-light:hover {
+  color: #fff !important;
 }
 
 #hero {
@@ -159,7 +176,7 @@ nav a {
   transition-timing-function: ease-in-out; /* Smooth transition for slides */
 }
 
-.col-lg-3 img {
+#hero .col-lg-3 img {
   position: relative;
   width: 405px;
   height: 403px;
@@ -380,15 +397,6 @@ button:disabled {
 #blog a {
   color: #05274c;
 }
-#blog .btn-trans {
-  background: transparent;
-  border: 1px solid #05274c;
-  color: #05274c !important;
-}
-
-#blog .btn-trans:hover {
-  color: #fff !important;
-}
 
 #blog .right,
 #blog .left {
@@ -414,35 +422,63 @@ button:disabled {
 /* Styling for the footer */
 
 .footer {
-  padding: 50px 0;
+  padding: 35px 0;
   background: #05274c;
-  color: #fff;
+  color: #efefef;
+}
+
+.footer h4 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 50.4px;
+  letter-spacing: -0.01em;
+  color: #efefef;
+}
+.footer h6 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+}
+.footer p {
+  font-size: 20px;
+}
+.footer a,
+.footer li {
+  margin-bottom: 5px;
 }
 .footer a {
-  color: #ffffff;
+  color: #efefef;
   text-decoration: none;
+  font-weight: 400;
+  line-height: 24px;
 }
 .footer a:hover {
   color: #e0e0e0;
 }
+
+.newsletter-con {
+  border-top: 1px solid #ffffff33;
+  border-bottom: 1px solid #ffffff33;
+  padding: 32px 0;
+  position: relative;
+}
+
 .newsletter {
-  border: 1px solid #fff;
-  border-radius: 30px;
-  overflow: hidden;
 }
 .newsletter input {
   border: none;
   outline: none;
   box-shadow: none;
+  background: transparent;
+  border: 1px solid #efefef;
+  border-radius: 50px;
+  width: 60%;
+  margin-right: 8px;
+  padding: 10px;
 }
-.newsletter button {
-  border-radius: 0;
+.newsletter input::placeholder {
+  color: #efefef;
 }
-.newsletter-con {
-  border-top: 1px solid #ffffff33;
-  border-bottom: 1px solid #ffffff33;
-}
-
 .testimonial-section {
   padding: 50px 20px;
 }
@@ -600,9 +636,31 @@ button:disabled {
     margin: 20px 0;
     position: unset;
   }
+
+  .footer h4 {
+    font-size: 24px;
+    line-height: 40.4px;
+  }
+
+  .footer h6,
+  .footer p {
+    font-size: 17px;
+  }
+
+  #blog .right,
+  #blog .left {
+    width: 100px;
+  }
+  #blog .row {
+    margin: 0;
+  }
 }
 
 @media (max-width: 500px) {
+  #blog .right,
+  #blog .left {
+    width: 70px;
+  }
   #hero {
     padding: 30px;
   }
@@ -628,6 +686,9 @@ button:disabled {
   .swiper h1 {
     font-size: 36px;
     line-height: 47.2px;
+  }
+  .footer .text-center {
+    text-align: left;
   }
 }
 
