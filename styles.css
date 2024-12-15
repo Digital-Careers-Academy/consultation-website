@@ -13,6 +13,10 @@ h3 {
   text-transform: uppercase;
 }
 
+.text-primary {
+  color: #2762bf !important;
+}
+
 .title h2 {
   font-size: 40px;
   font-weight: 500;
@@ -315,53 +319,98 @@ button:disabled {
 }
 
 /* Styling for Team Member Cards */
-.card {
-  background-color: #0b2345;
+#teams .box {
+  height: 413px;
+  color: #efefef;
+  padding: 0 23px;
+}
+#teams .box .profile {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+}
+#teams .box h5 {
+  font-size: 20px;
+  font-weight: 600;
+}
+#teams .box small {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
+#teams .box p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21.9px;
 }
 
-.card-body p {
-  font-size: 0.9rem;
+#teams .col-md-4 {
+  padding: 0;
 }
 
-.card .text-muted {
-  font-size: 0.8rem;
+#teams .one,
+#teams .two,
+#teams .three {
+  margin-bottom: 130px;
 }
-
-.card .rounded-circle {
-  border: 2px solid #ffffff33; /* Subtle border for profile image */
+#teams .two {
+  position: relative;
+  top: 65px;
 }
-
-.card a {
-  transition: color 0.3s ease;
+#teams .five {
+  position: relative;
+  bottom: 65px;
 }
-
-.card a:hover {
-  color: #007bff; /* Highlight on hover */
-}
-
 /* Custom styles for the Latest Blogs section */
-h2 span {
-  color: #007bff; /* Primary color for "Blogs" */
+#blog {
+  position: relative;
+  padding: 100px 0;
+  background: #f2f9ff;
 }
 
-.card-title {
-  font-size: 1.25rem;
+#blog .row {
+  margin: 64px 0;
 }
 
-.card-text {
-  font-size: 0.95rem;
+#blog .card {
+  border-radius: none !important;
+  box-shadow: 0px 0px 40px 3px #00000014;
 }
 
-.btn-outline-primary {
-  border: 2px solid #007bff;
-  color: #007bff;
+#blog a {
+  color: #05274c;
+}
+#blog .btn-trans {
+  background: transparent;
+  border: 1px solid #05274c;
+  color: #05274c !important;
 }
 
-.btn-outline-primary:hover {
-  background-color: #007bff;
-  color: white;
+#blog .btn-trans:hover {
+  color: #fff !important;
 }
 
+#blog .right,
+#blog .left {
+  position: absolute;
+  top: 145px;
+}
+#blog .right {
+  left: 0;
+}
+#blog .left {
+  right: 0;
+}
+#blog small {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+#blog h5 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+}
 /* Styling for the footer */
 
 .footer {
@@ -538,6 +587,19 @@ h2 span {
     line-height: 24.8px;
     letter-spacing: 0.5px;
   }
+  #teams .one,
+  #teams .two,
+  #teams .three {
+    margin-bottom: 0;
+  }
+  #teams .three {
+    margin-bottom: 20px;
+  }
+  #teams .two,
+  #teams .five {
+    margin: 20px 0;
+    position: unset;
+  }
 }
 
 @media (max-width: 500px) {
@@ -567,4 +629,19 @@ h2 span {
     font-size: 36px;
     line-height: 47.2px;
   }
+}
+
+.social {
+  width: 24px;
+  height: 24px;
+  border-radius: 24px;
+  background: #f2f9ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s ease-in-out;
+}
+
+.social:hover img {
+  transform: scale(1.2);
 }
