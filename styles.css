@@ -44,6 +44,7 @@ nav {
   border: 0 !important;
   line-height: 24px;
   color: #fff !important;
+  font-size: 15px !important;
 }
 
 .btn-md {
@@ -644,7 +645,7 @@ button:disabled {
 
 @media (max-width: 900px) {
   #hero {
-    padding: 92px 0;
+    padding: 30px 0;
   }
 
   .d-flex {
@@ -685,16 +686,29 @@ button:disabled {
     font-size: 30px;
     line-height: 38px;
   }
-  .swiper h1 {
-    font-size: 46px;
-    line-height: 47.2px;
-  }
-  .swiper p {
-    color: #2762bf;
-    font-size: 20px;
-    line-height: 24.8px;
-    letter-spacing: 0.5px;
-  }
+    .swiper p {
+      color: #2762bf;
+      font-size: 17px;
+      line-height: 20.8px;
+      letter-spacing: 0.5px;
+      margin: 10px 0 20px;
+    }
+  
+    .swiper h1 {
+      font-size: 24px;
+      line-height: 30px;
+    }
+  
+    .swiper-slide {
+      padding: 0 20px;
+      align-items: start !important;
+    }
+
+             #hero .col-lg-3 img {
+              text-align: center;
+               width: 350px;
+               object-fit: contain;
+             }
   #teams .one,
   #teams .two,
   #teams .three {
@@ -747,18 +761,9 @@ button:disabled {
     width: 70px;
   }
   #hero {
-    padding: 30px;
-  }
-  .swiper p {
-    color: #2762bf;
-    font-size: 18px;
-    line-height: 20.8px;
-    letter-spacing: 0.5px;
+    padding: 10px;
   }
 
-  .swiper-slide {
-    padding: 0 20px;
-  }
   h3 {
     font-size: 18px !important;
     line-height: 38px;
@@ -767,10 +772,6 @@ button:disabled {
   .title h2 {
     font-size: 20px;
     line-height: 38px;
-  }
-  .swiper h1 {
-    font-size: 36px;
-    line-height: 47.2px;
   }
   .footer .text-center {
     text-align: left;
@@ -785,5 +786,18 @@ button:disabled {
       bottom: -35px;
       right: -45px;
     }
+.btn {
+  padding: 12px !important;
+}
+.btn-lg {
+  width: 200px;
+}
+#hero .col-lg-3 img {
+  width: 100%;
+  object-fit: contain;
+}
 
+.page-logo img{
+  width: 180px;
+}
 }
