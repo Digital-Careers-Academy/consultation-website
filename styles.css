@@ -591,6 +591,11 @@ video {
   justify-content: space-between;
   color: #fff;
 }
+#contact .box .details .ellipse{
+  position: absolute;
+  bottom: -85px;
+  right: -95px;
+}
 #contact .box .details h6 {
   font-size: 28px;
   font-weight: 600;
