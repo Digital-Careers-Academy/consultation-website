@@ -1,5 +1,5 @@
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif !important;
   font-size: 16px;
   color: #05274c;
   line-height: 22.4px;
@@ -291,33 +291,6 @@ video {
   line-height: 28px;
 }
 
-/* Styling for inline labels and form */
-.form-floating .form-control {
-  border-radius: 0;
-  border: none;
-  border-bottom: 2px solid #ccc;
-  transition: border-color 0.3s ease-in-out;
-}
-
-.form-floating .form-control:focus {
-  border-bottom-color: #007bff;
-  box-shadow: none;
-}
-
-label {
-  font-size: 0.85rem;
-  font-weight: 500;
-}
-
-textarea.form-control {
-  resize: none;
-}
-
-button:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
-}
-
 #about .box {
   width: 363px;
   height: 256px;
@@ -527,7 +500,7 @@ button:disabled {
   justify-content: center;
   cursor: pointer;
   font-size: 1.2rem;
-  transition: background 0.3s;
+  transition: all 0.3s;
 }
 
 .nav-btn:hover {
@@ -633,9 +606,26 @@ button:disabled {
 }
 #contact .box label {
   color: #05274c;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 500;
   line-height: 20px;
+}
+
+.form-floating .form-control {
+  border-radius: 0;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.form-floating .form-control:focus {
+  border-bottom-color: #007bff;
+  box-shadow: none;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }
 
 #contact .border-bottom {
