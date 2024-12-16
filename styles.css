@@ -736,6 +736,9 @@ button:disabled {
     right: 0;
     bottom: -60px;
   }
+        .footer .align-self-center {
+          align-self: unset !important;
+        }
 }
 
 @media (max-width: 500px) {
@@ -776,4 +779,11 @@ button:disabled {
   #contact .box {
     padding: 15px;
   }
+
+    #contact .box .details .ellipse {
+      width: 150px;
+      bottom: -35px;
+      right: -45px;
+    }
+
 }
