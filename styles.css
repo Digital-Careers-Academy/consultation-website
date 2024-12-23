@@ -24,7 +24,7 @@ h3 {
 }
 
 nav {
-  padding: 21px 0 !important;
+  padding: 10px 0 !important;
 }
 
 .nav-link {
@@ -75,7 +75,7 @@ nav {
 }
 
 #hero {
-  padding: 102px 0;
+  padding: 20px 0 102px;
 }
 
 .swiper h1 {
