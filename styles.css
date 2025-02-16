@@ -665,7 +665,27 @@ button:disabled {
   margin-top: 25px;
 }
 
+.cookie-popup {
+  width: 30%;
+  position: fixed;
+  z-index:  1;
+  bottom: 20px;
+  right: 20px;
+  background: white;
+  padding: 15px 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  display: none;
+}
+
+.cookie-popup a {
+  color: #05274c;
+}
+
 @media (max-width: 900px) {
+      .cookie-popup {
+          width: 50%;
+        }
   #testimonials {
     height: unset;
   }
@@ -880,4 +900,8 @@ button:disabled {
   .page-logo img {
     width: 180px;
   }
+    .cookie-popup {
+      width: 70%;
+    }
 }
+

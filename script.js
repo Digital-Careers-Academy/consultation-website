@@ -104,3 +104,17 @@ indicators.forEach((indicator, i) => {
 
 // Initialize the first testimonial
 updateTestimonial(currentIndex);
+
+document.addEventListener("DOMContentLoaded", function () {
+    const cookiePopup = document.getElementById("cookie-popup");
+    const acceptButton = document.getElementById("accept-cookie");
+
+    if (!localStorage.getItem("cookieAccepted")) {
+        cookiePopup.style.display = "block";
+    }
+
+    acceptButton.addEventListener("click", function () {
+        localStorage.setItem("cookieAccepted", "true");
+        cookiePopup.style.display = "none";
+    });
+});
