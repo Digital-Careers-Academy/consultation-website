@@ -927,3 +927,8 @@ button:disabled {
 .notice ul li b{
 color: #000000CC;
 }
+
+.notice .contact, .notice .contact a {
+  color: #0D2B76;
+  font-weight: 600;
+}
