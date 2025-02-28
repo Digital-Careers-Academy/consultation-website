@@ -932,3 +932,11 @@ color: #000000CC;
   color: #0D2B76;
   font-weight: 600;
 }
+
+button.reject {
+  background: rgb(128, 3, 3);
+  margin-right: 10px;
+}
+button.reject:hover {
+  background: rgb(99, 2, 2) !important;
+}

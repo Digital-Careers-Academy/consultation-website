@@ -102,19 +102,27 @@ indicators.forEach((indicator, i) => {
   });
 });
 
-// Initialize the first testimonial
-updateTestimonial(currentIndex);
+  // Initialize the first testimonial
+  updateTestimonial(currentIndex);
 
-document.addEventListener("DOMContentLoaded", function () {
-    const cookiePopup = document.getElementById("cookie-popup");
-    const acceptButton = document.getElementById("accept-cookie");
+  // Cookie consent popup logic
+  const cookiePopup = document.getElementById("cookie-popup");
+  const acceptButton = document.getElementById("accept-cookie");
+  const rejectButton = document.getElementById("reject-cookie");
 
-    if (!localStorage.getItem("cookieAccepted")) {
-        cookiePopup.style.display = "block";
-    }
+  // Show the popup if cookie consent hasn't been accepted
+  if (!localStorage.getItem("cookieAccepted")) {
+    cookiePopup.style.display = "block";
+  }
 
-    acceptButton.addEventListener("click", function () {
-        localStorage.setItem("cookieAccepted", "true");
-        cookiePopup.style.display = "none";
-    });
-});
+  // When the user clicks "Accept"
+  acceptButton.addEventListener("click", function () {
+    localStorage.setItem("cookieAccepted", "true");
+    cookiePopup.style.display = "none";
+  });
+
+  // When the user clicks "Reject"
+  rejectButton.addEventListener("click", function () {
+    // Optionally, you can handle rejection (e.g., set a flag or perform additional actions)
+    cookiePopup.style.display = "none";
+  });
