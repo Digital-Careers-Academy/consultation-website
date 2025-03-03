@@ -113,6 +113,8 @@ indicators.forEach((indicator, i) => {
   // Show the popup if cookie consent hasn't been accepted
   if (!localStorage.getItem("cookieAccepted")) {
     cookiePopup.style.display = "block";
+  } else {
+    cookiePopup.style.display = "none";
   }
 
   // When the user clicks "Accept"
@@ -122,7 +124,8 @@ indicators.forEach((indicator, i) => {
   });
 
   // When the user clicks "Reject"
-  rejectButton.addEventListener("click", function () {
+rejectButton.addEventListener("click", function () {
+  localStorage.setItem("cookieAccepted", "false");
     // Optionally, you can handle rejection (e.g., set a flag or perform additional actions)
     cookiePopup.style.display = "none";
   });
