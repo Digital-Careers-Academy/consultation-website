@@ -903,6 +903,8 @@ button:disabled {
     .cookie-popup {
       width: 70%;
     }
+
+           .cookie-content {width: 100% !important}
 }
 
 .notice h1 {
