@@ -32,7 +32,7 @@ nav {
   line-height: 27.2px !important;
 }
 
-.nav-link:hover {
+.nav-link:hover, .active {
   color: #0053d0 !important;
 }
 
@@ -682,6 +682,107 @@ button:disabled {
   color: #05274c;
 }
 
+.who-we-are-section {
+  position: relative;
+  padding: 100px 0 50px;
+  background: #fff url('./images/who-we-are.jpg') no-repeat center center/cover;
+  z-index: 1;
+}
+
+.who-we-are-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.who-we-are-section .section-subtitle {
+    font-size: 18px;
+    margin: 27px 0 90px;
+    color: #797979;
+}
+
+.info-card {
+  background-color: #fff;
+  color: #05274C;
+  border-top: 12px solid #C4C4C4;
+  border-bottom: 12px solid #C4C4C4;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+}
+
+.info-card .icon {
+  margin-top: 64px;
+}
+.info-card h5 {
+  margin: 40px 0 45px;
+}
+.what-we-do-section {
+  position: relative;
+  background-color: #fff;
+  padding: 60px 100px;
+}
+.what-we-do-section img {
+  max-width: 100%;
+}
+
+.section-description {
+  color: #05274C;
+}
+
+.paper-plane-img {
+  animation: flyPlane 6s ease-in-out infinite;
+}
+
+@keyframes flyPlane {
+  0% {
+    transform: translateX(0) translateY(0) rotate(0deg);
+  }
+
+  50% {
+    transform: translateX(20px) translateY(-10px) rotate(5deg);
+  }
+
+  100% {
+    transform: translateX(0) translateY(0) rotate(0deg);
+  }
+}
+.services-section {
+  background-color: #031749 !important;
+  padding: 160px 0 !important;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Decorative Background Circles */
+.circle {
+  position: absolute;
+}
+
+.circle1 {
+  top: 30%;
+    left: 30%;
+}
+
+.circle2 {
+  top: 20px;
+  right: -5px;
+}
+
+.circle3 {
+
+  bottom: 0;
+    left: -2px;
+}
 @media (max-width: 900px) {
       .cookie-popup {
           width: 50%;
