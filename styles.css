@@ -1104,3 +1104,83 @@ button.reject:hover {
       border: 1px solid #001c44;
       color: #001c44;
     }
+    
+        .section-wrap {
+          padding: 72px 0;
+          background: #031749;
+        }
+    
+        .wv-card {
+          border: 0;
+          box-shadow: 0px 2px 10px 1px #00000026;
+          overflow: hidden;
+        }
+    
+        /* Accordion header button */
+        .wv-accordion .accordion-button {
+            font-weight: 700;
+            font-style: Bold;
+            font-size: 16px;
+            line-height: 140%;
+            color: #001122;
+            box-shadow: none !important;
+            padding: 20px;
+        }
+                .accordion-button:not(.collapsed) {
+                  background-color: transparent !important;
+                  box-shadow: none !important;
+                }
+    
+        .wv-accordion .accordion-button.collapsed {
+          border-bottom: 0;
+        }
+    
+        /* +/- icon on the right */
+        .wv-accordion .accordion-button::after {
+          content: '–';
+          font-weight: 700;
+          font-size: 22px;
+          transform: none !important;
+          background: none !important;
+          color: #111827;
+          width: auto;
+          height: auto;
+          margin-left: auto;
+          position: absolute;
+          right: 20px;
+          top: 50%;
+          translate: 0 -50%;
+        }
+    
+        .wv-accordion .accordion-button.collapsed::after {
+          content: '+';
+        }
+    
+        .divider {
+          height: 1px;
+          margin-top: 28px;
+        }
+    
+        .cta-btn {
+          margin-top: 14px;
+          padding: 10px 18px;
+          border-radius: 32px;
+          font-weight: 600;
+        }
+    
+        /* Keep content centered and max width similar to screenshot */
+        .content-max {
+          max-width: 980px;
+          margin: 0 auto;
+        }
+    
+        /* Small screen tweaks */
+        @media (max-width:576px) {
+          .wv-accordion .accordion-button {
+            padding: 18px 52px 18px 16px;
+          }
+    
+          .accordion-body {
+            padding: 22px 16px;
+          }
+        }
