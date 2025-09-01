@@ -1355,6 +1355,7 @@ button.reject:hover {
                   .event-card {
                     flex-direction: column;
                   }
-        
+                                    .what-we-do-section {
+                                      padding: 10px;               }
         
                     }
