@@ -3,6 +3,7 @@ body {
   font-size: 16px;
   color: #05274c;
   line-height: 22.4px;
+  scroll-behavior: smooth;
 }
 
 h3 {
@@ -1184,3 +1185,176 @@ button.reject:hover {
             padding: 22px 16px;
           }
         }
+
+        .read-more {
+          display: inline-flex;
+          align-items: center;
+          font-size: 16px;
+          color: #666;
+          text-decoration: none;
+          cursor: pointer;
+        }
+    
+        .read-more span {
+          text-decoration: underline;
+          margin-right: 6px;
+          font-weight: 500;
+        }
+    
+        .read-more .arrow {
+          font-size: 20px;
+        }
+        .w-header {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: url('./images/webinar.jpg') no-repeat center center/cover;
+          height: 347px;
+        }
+        .w-header h1 {
+            font-weight: 700;
+            font-style: Bold;
+            font-size: 48px;
+            line-height: 130%;
+          color:#1A1A1A;
+        }
+.webinar {
+  background: #E9F2FF;
+  position: relative;
+}
+.webinar span {
+  color: #00000099;
+  font-weight: 700;
+}
+.webinar h6{
+  font-size: 24px;
+  color: #05274C;
+  font-weight: 700;
+}
+.webinar .first img,
+.webinar .second img {
+  display: block;
+}
+.webinar .first, .webinar .second{
+  position: absolute;
+  top: 15px;
+}
+.webinar .first{
+  left: 230px;
+}
+.webinar .second{
+  right: 230px;
+}
+                .scrollable-container {
+                  background: #000C20;
+                  padding-top: 86px;
+                  padding-left: 95px;
+                  padding-right: 69px !important;
+                  position: relative;
+                  z-index: 10;
+                }
+        
+                .timeline {
+                  position: relative;
+                  padding-left: 30px;
+                  border-left: 2px dashed rgba(255, 255, 255, 0.3);
+                }
+        
+                .timeline::before {
+                  content: "";
+                  position: absolute;
+                  left: -6px;
+                  width: 12px;
+                  height: 12px;
+                  background-color: gray;
+                  border-radius: 50%;
+                  top: 0;
+                }
+        
+                .event-card {
+                  padding: 24px;
+                  border-radius: 20px;
+                  display: flex;
+                  align-items: center;
+                  border: 1px solid #FFFFFF80;
+                  gap: 15px;
+                  background: #FFFFFF0D;
+                  margin-bottom: 66px;
+                }
+        
+                .event-image {
+                  max-width: 120px;
+                  height: auto;
+                  border-radius: 8px;
+                }
+        
+                .event-time {
+                  font-weight: bold;
+                  color: #d1d1d1;
+                }
+        
+                .event-title {
+                  font-size: 1rem;
+                  font-weight: bold;
+                }
+        
+                .event-meta {
+                  display: flex;
+                  align-items: center;
+                  gap: 5px;
+                  color: #a9a9a9;
+                  font-size: 0.9rem;
+                }
+        
+                .scrollable-container {
+                  max-height: 500px;
+                  overflow-y: auto;
+                  padding-right: 10px;
+                }
+        
+                /* Scrollbar Styling */
+                .scrollable-container {
+                  max-height: 500px;
+                  overflow-y: auto;
+                  padding-right: 10px;
+                }
+        
+                /* WebKit (Chrome, Safari, Edge) */
+                .scrollable-container::-webkit-scrollbar {
+                  width: 8px;
+                  /* Scrollbar width */
+                }
+        
+                .scrollable-container::-webkit-scrollbar-track {
+                  background: #002052;
+                  /* Dark background */
+                  border-radius: 10px;
+                }
+        
+                .scrollable-container::-webkit-scrollbar-thumb {
+                  background: #002052;
+                  /* Blue scrollbar */
+                  border-radius: 10px;
+                }
+        
+                .scrollable-container::-webkit-scrollbar-thumb:hover {
+                  background: #001331;
+                }
+                /* Firefox */
+                .scrollable-container {
+                  scrollbar-width: 20px;
+                  scrollbar-color: #013381CC #162447;
+                }
+        
+                @media (max-width: 600px) {
+                  .scrollable-container {
+                    padding: 20px;
+                    padding-right: unset !important;
+                  }
+        
+                  .event-card {
+                    flex-direction: column;
+                  }
+        
+        
+                    }
