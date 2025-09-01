@@ -1207,12 +1207,12 @@ button.reject:hover {
         .w-header {
           display: flex;
           justify-content: center;
-          align-items: center;
           background: url('./images/webinar.jpg') no-repeat center center/cover;
           height: 347px;
         }
         .w-header h1 {
-            font-weight: 700;
+          font-weight: 700;
+          margin-top: 73px;
             font-style: Bold;
             font-size: 48px;
             line-height: 130%;
